@@ -3,7 +3,7 @@ import twilioApp
 
 Server = Flask(__name__)
 
-@Server.route('/', methods = ['POST'])
+@Server.route('/index', methods = ['GET','POST'])
 def index():
     twilioApp.sendSMS("hello world")
     return "message sent"
@@ -12,5 +12,5 @@ def index():
 def about():
     return "Hello world"
 
-if __name__ == "__main__":
-    Server.run(host="0.0.0.0",ssl_context = 'adhoc')
+
+

@@ -11,4 +11,4 @@ def sendSMS(messageTS):
     from_= "+17323654661", 
     body = messageTS
     )
-    print(message.sid)
+    sendSMS()
